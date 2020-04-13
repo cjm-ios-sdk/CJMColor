@@ -8,6 +8,6 @@
 #ifndef CJMColor_h
 #define CJMColor_h
 
-#import "UIColor+CJMColor"
+#import "UIColor+CJMColor.h"
 
 #endif /* CJMColor_h */

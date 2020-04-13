@@ -7,6 +7,7 @@
 //
 
 #import "CJMViewController.h"
+#import <CJMColor/CJMColor.h>
 
 @interface CJMViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIColor *color = [UIColor cjmc_colorWithRGBHexString:@"#ff0000" alpha:1];
 }
 
 - (void)didReceiveMemoryWarning
