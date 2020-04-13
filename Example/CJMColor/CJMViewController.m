@@ -21,6 +21,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     UIColor *color = [UIColor cjmc_colorWithRGBHexString:@"#ff0000" alpha:1];
+    NSLog(@"color=%@", color);
 }
 
 - (void)didReceiveMemoryWarning

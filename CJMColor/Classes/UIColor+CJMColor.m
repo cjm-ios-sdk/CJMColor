@@ -22,9 +22,7 @@
     CGFloat red = 0;
     CGFloat blue = 0;
     CGFloat green = 0;
-    
-    NSAssert([colorString length] == 3, @"hexString 的长度不符合");
-    
+        
     switch ([colorString length]) {
         case 3: //#RGB
             //alpha = 1.0f;
@@ -32,24 +30,24 @@
             green = [self cjmc_colorComponentFrom:colorString start:1 length:1];
             blue = [self cjmc_colorComponentFrom:colorString start:2 length:1];
             break;
-//        case 4: //#ARGB
-//            alpha = [self cjmc_colorComponentFrom:colorString start:0 length:1];
-//            red = [self cjmc_colorComponentFrom:colorString start:1 length:1];
-//            green = [self cjmc_colorComponentFrom:colorString start:2 length:1];
-//            blue = [self cjmc_colorComponentFrom:colorString start:3 length:1];
-//            break;
-//        case 6: //#RRGGBB
-//            //alpha = 1.0f;
-//            red = [self cjmc_colorComponentFrom:colorString start:0 length:2];
-//            green = [self cjmc_colorComponentFrom:colorString start:2 length:2];
-//            blue = [self cjmc_colorComponentFrom:colorString start:4 length:2];
-//            break;
-//        case 8: // AARRGGBB
-//            alpha = [self cjmc_colorComponentFrom:colorString start:0 length:2];
-//            red = [self cjmc_colorComponentFrom:colorString start:2 length:2];
-//            green = [self cjmc_colorComponentFrom:colorString start:4 length:2];
-//            blue = [self cjmc_colorComponentFrom:colorString start:6 length:2];
-//            break;
+        case 4: //#ARGB
+            alpha = [self cjmc_colorComponentFrom:colorString start:0 length:1];
+            red = [self cjmc_colorComponentFrom:colorString start:1 length:1];
+            green = [self cjmc_colorComponentFrom:colorString start:2 length:1];
+            blue = [self cjmc_colorComponentFrom:colorString start:3 length:1];
+            break;
+        case 6: //#RRGGBB
+            //alpha = 1.0f;
+            red = [self cjmc_colorComponentFrom:colorString start:0 length:2];
+            green = [self cjmc_colorComponentFrom:colorString start:2 length:2];
+            blue = [self cjmc_colorComponentFrom:colorString start:4 length:2];
+            break;
+        case 8: // AARRGGBB
+            alpha = [self cjmc_colorComponentFrom:colorString start:0 length:2];
+            red = [self cjmc_colorComponentFrom:colorString start:2 length:2];
+            green = [self cjmc_colorComponentFrom:colorString start:4 length:2];
+            blue = [self cjmc_colorComponentFrom:colorString start:6 length:2];
+            break;
         default:
             NSLog(@"error! cjmc_colorWithRGBHexString:alpha:");
             return nil;
